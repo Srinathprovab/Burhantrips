@@ -1,0 +1,6 @@
+framework module Pods_Burhantrips_BurhantripsUITests {
+  umbrella header "Pods-Burhantrips-BurhantripsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

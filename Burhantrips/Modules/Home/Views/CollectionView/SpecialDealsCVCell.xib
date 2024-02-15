@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SpecialDealsCVCell" customModule="Burhantrips" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="212"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="212"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPB-Gw-c5t">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="212"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWB-VL-1wr">
+                                <rect key="frame" x="16" y="192" width="158" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-rh-1So">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="Oac-CZ-rwf"/>
+                                    <constraint firstAttribute="height" constant="180" id="PWV-Iy-X3v"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SgN-rh-1So" firstAttribute="top" secondItem="RPB-Gw-c5t" secondAttribute="top" id="QQ5-s8-SfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="SgN-rh-1So" secondAttribute="trailing" id="Wxp-JR-9eE"/>
+                            <constraint firstAttribute="bottom" secondItem="HWB-VL-1wr" secondAttribute="bottom" id="ZD4-s1-FZK"/>
+                            <constraint firstItem="SgN-rh-1So" firstAttribute="leading" secondItem="RPB-Gw-c5t" secondAttribute="leading" id="aRY-0S-Xz3"/>
+                            <constraint firstItem="HWB-VL-1wr" firstAttribute="leading" secondItem="RPB-Gw-c5t" secondAttribute="leading" constant="16" id="bWd-qn-PT3"/>
+                            <constraint firstItem="HWB-VL-1wr" firstAttribute="top" secondItem="SgN-rh-1So" secondAttribute="bottom" constant="12" id="fUG-st-QFy"/>
+                            <constraint firstAttribute="trailing" secondItem="HWB-VL-1wr" secondAttribute="trailing" constant="16" id="koL-Yz-dLQ"/>
+                            <constraint firstAttribute="height" constant="212" id="pKe-gE-pB1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="RPB-Gw-c5t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KuK-kB-hEl"/>
+                <constraint firstAttribute="bottom" secondItem="RPB-Gw-c5t" secondAttribute="bottom" id="M5d-cD-q8z"/>
+                <constraint firstItem="RPB-Gw-c5t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SVb-ca-POj"/>
+                <constraint firstAttribute="trailing" secondItem="RPB-Gw-c5t" secondAttribute="trailing" id="b3n-Ep-RuY"/>
+            </constraints>
+            <size key="customSize" width="434" height="223"/>
+            <connections>
+                <outlet property="bookinglbl" destination="HWB-VL-1wr" id="Ego-zr-H4K"/>
+                <outlet property="holderView" destination="RPB-Gw-c5t" id="hIg-02-IAU"/>
+                <outlet property="offerImage" destination="SgN-rh-1So" id="edf-2K-voq"/>
+            </connections>
+            <point key="canvasLocation" x="418.84057971014494" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

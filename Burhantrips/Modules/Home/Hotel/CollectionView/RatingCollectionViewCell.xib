@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RatingCollectionViewCell" customModule="Travrun" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Id-X0-heH" customClass="BorderedView" customModule="Travrun" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8u-gR-Gmd">
+                                <rect key="frame" x="8" y="7" width="6.3333333333333321" height="16"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="TMU-PB-I7D">
+                                <rect key="frame" x="22" y="7" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="iew-yF-7nk"/>
+                                    <constraint firstAttribute="width" constant="16" id="mMz-Cd-h7B"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411764705882" green="0.38431372549019605" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TMU-PB-I7D" firstAttribute="top" secondItem="5Id-X0-heH" secondAttribute="top" constant="7" id="AZW-TO-Xcg"/>
+                            <constraint firstItem="g8u-gR-Gmd" firstAttribute="centerY" secondItem="5Id-X0-heH" secondAttribute="centerY" id="MNF-0W-Fo0"/>
+                            <constraint firstItem="g8u-gR-Gmd" firstAttribute="top" secondItem="5Id-X0-heH" secondAttribute="top" constant="7" id="Okv-if-Ob6"/>
+                            <constraint firstItem="g8u-gR-Gmd" firstAttribute="leading" secondItem="5Id-X0-heH" secondAttribute="leading" constant="8" id="kXn-Ia-fBY"/>
+                            <constraint firstAttribute="trailing" secondItem="TMU-PB-I7D" secondAttribute="trailing" constant="7" id="mXT-Rs-HoV"/>
+                            <constraint firstAttribute="bottom" secondItem="TMU-PB-I7D" secondAttribute="bottom" constant="7" id="srK-VB-7l1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="AppBorderColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5Id-X0-heH" secondAttribute="bottom" id="2p8-33-QJl"/>
+                <constraint firstItem="5Id-X0-heH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="R6p-2L-DGV"/>
+                <constraint firstItem="5Id-X0-heH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qUu-OG-dYK"/>
+                <constraint firstAttribute="trailing" secondItem="5Id-X0-heH" secondAttribute="trailing" id="qmS-D1-xcg"/>
+            </constraints>
+            <connections>
+                <outlet property="countLabel" destination="g8u-gR-Gmd" id="fXn-yi-I7i"/>
+                <outlet property="holderView" destination="5Id-X0-heH" id="bSp-GX-Uur"/>
+                <outlet property="starImage" destination="TMU-PB-I7D" id="c0U-RI-FIL"/>
+            </connections>
+            <point key="canvasLocation" x="49.618320610687022" y="-1.4084507042253522"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="16" height="16"/>
+        <namedColor name="AppBorderColor">
+            <color red="0.90200001001358032" green="0.9100000262260437" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
